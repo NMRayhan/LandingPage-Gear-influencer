@@ -20,14 +20,6 @@ a {
   font-family: Raleway;
   font-weight: bold;
 }
-/*----------------- 
-Responsive Media Query 
-------------------*/
-@media  {
-    
-}
-
-
 
 /*----------------- 
 button style  
@@ -74,12 +66,12 @@ heading style
   margin-right: 15px;
   padding: 20px 10px;
 }
-.menu ul li a{
-    transition: color .25s;
+.menu ul li a {
+  transition: color 0.25s;
 }
-.menu ul li:hover a{
-    color: black;
-    cursor: pointer;
+.menu ul li:hover a {
+  color: black;
+  cursor: pointer;
 }
 .menu ul li a {
   color: white;
@@ -144,7 +136,7 @@ sponsor section style
 }
 .sponsor-section .sponsor-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 .sponsor-list li {
@@ -251,9 +243,10 @@ Features section style
   border-radius: 15px;
 }
 .features-banner {
-  width: 40%;
+  width: 45%;
 }
 .features-banner img {
+  padding: 25px 0px;
   width: 100%;
 }
 .features-details {
@@ -310,11 +303,92 @@ footer section style
   background-color: white;
   padding: 10px;
   border-radius: 50px;
-  transition: color .25s, background-color .25s, transform .25s;
+  transition: color 0.25s, background-color 0.25s, transform 0.25s;
 }
 .social-icon .fab:hover {
   color: #ffffff;
   cursor: pointer;
   background-color: #925353c9;
   transform: scale(1.2);
+}
+
+/*----------------- 
+Responsive Media Query 
+------------------*/
+@media only screen and (max-width: 600px) {
+  .banner-section {
+    width: 100%;
+    margin: auto;
+  }
+  .top-banner {
+    margin-top: 20px;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .banner-half {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .sponsor-section {
+    width: 100%;
+    margin: auto;
+  }
+  .sponsor-list {
+    flex-wrap: wrap;
+  }
+  .product-section {
+    width: 100%;
+    margin: auto;
+  }
+  .product-section .product-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .features-section {
+    width: 90%;
+    margin: auto;
+  }
+  .features-section .features {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width:992px ){
+  .banner-section {
+    width: 100%;
+    margin: auto;
+  }
+  .top-banner {
+    margin-top: 20px;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .banner-half {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .sponsor-section {
+    width: 100%;
+    margin: auto;
+  }
+  .sponsor-list {
+    flex-wrap: wrap;
+  }
+  .product-section {
+    width: 100%;
+    margin: auto;
+  }
+  .product-section .product-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .features-section {
+    width: 90%;
+    margin: auto;
+  }
+  .features-section .features {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
