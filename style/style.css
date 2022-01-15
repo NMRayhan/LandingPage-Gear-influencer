@@ -316,6 +316,13 @@ footer section style
 Responsive Media Query 
 ------------------*/
 @media only screen and (max-width: 600px) {
+  .menu {
+      display: none;
+  }
+  .nav-bar .header-logo{
+      padding: 15px ;
+      font-weight: bold;
+  }
   .banner-section {
     width: 100%;
     margin: auto;
